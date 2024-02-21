@@ -41,10 +41,10 @@ The first step is to compile LLVM on your machine
 ```sh
      ~$ git clone https://github.com/llvm/llvm-project.git
      ~$ cd llvm-project
-     llvm-project$ git checkout release/8.x
+     llvm-project$ git checkout release/17.x
      llvm-project$ mkdir llvm/build
      llvm-project$ cd llvm/build
-     build$ cmake ..
+     build$ cmake .. -DCMAKE_BUILD_TYPE=Debug
      build$ make
 ```
 To run tests, you need to build `lli`.
